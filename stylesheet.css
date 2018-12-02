@@ -1,0 +1,142 @@
+/* Ik gebruik variablen omdat ik nog niet helemaal eens ben met de kleur verdeling van de elementen, vind het een beetje onhandig om telkens maar te moeten zoeken*/
+:root {
+  --rood: #ED1A2D;
+  --lichtblauw: #13679c;
+  --donkerblauw: #03477f;
+  --zwart: #221F20;
+  --grijs: #EBEBEC;
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(fonts/SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family: Light;
+    src: url(fonts/SourceSansPro-Light.otf);
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #fdfdfd;
+}
+
+header{
+	height: 30px;
+	margin: 0px;
+	background-color: white;
+	border-bottom: solid 1px var(--grijs);
+}
+header img{
+	height: 35px; 
+	display: block;
+	margin: auto;
+}
+nav{
+	margin-top: 1.5em;
+}
+nav a{
+	color: black;
+	font-size: 1.4em;
+	text-decoration:none;
+	font-family: Bold;
+	margin-left: 10px;
+}
+nav h1{
+	display: inline;
+	font-size: 1.2em;
+	padding: 5px;
+	font-family: Regular;
+	margin-left: 10px;
+}
+nav button{
+	float: right;
+	background-color: red;
+	color: white;
+	border:none;
+	font-family: Regular;
+	font-size: 1.2em;
+	padding: 2px 8px;
+	margin-right: 20px;
+}
+section > h1{
+	text-align: center;
+	color: var(--donkerblauw);
+	font-family: Bold;
+}
+ul{
+	display: block;
+	margin: auto;
+}
+li{
+	display: inline;
+	padding: 0px 2px 0px;
+	margin: 0px;
+	margin-right: -4px;
+	border:solid red 2.5px;
+	font-size: 0.8em;
+	font-family: Regular;
+}
+ul .active{
+	background-color: red;
+	color:white;
+}
+li:hover{
+	background-color: red;
+	color: white;
+	cursor: pointer;
+}
+
+article{
+	border-radius: 15px;
+	margin: 20px 5%;
+	width: 90%;
+	position: relative;
+}
+article h2{
+	position: absolute;
+	bottom: 20px;
+	left: 10px;
+	color: var(--grijs);
+	font-family: Regular;
+}
+article span{
+	position: absolute;
+	color: var(--grijs);
+	font-family: Light;
+}
+.likes{
+	bottom: 15px;
+	left: 10px;
+}
+.dislikes{
+	bottom: 15px;
+	left: 70px;	
+}
+.bekeken{
+	bottom: 15px;
+	right:20px;	
+}
+.leestijd{
+	top: 10px;
+	right: 15px;
+	font-family: Bold !important;
+}
+article img{
+	width: 100%;
+	border-radius: 15px;
+}
+
+
+/* Home pagina nog niet beoordelen*/
+form input{
+	background-color: var(--rood);
+	color: white;
+	border: var(--rood);
+	padding: 5px;
+}
