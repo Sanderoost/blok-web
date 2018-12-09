@@ -38,14 +38,13 @@ nav{
 }
 nav img{
 	height: 35px; 
-	margin: auto;
-	display: block;
+	margin-left: 35%;
 }
 nav button{
-	float: right;
 	background-color: red;
 	color: white;
 	border: none;
+	right: 0px;
 	position: absolute;
 	border-radius: 50%;
 	font-size: 1.2em;
@@ -60,6 +59,13 @@ fieldset{
 	border:none;
 	background-color: var(--grijs);
 	padding: 0px;
+}
+fieldset button{
+	margin:auto;
+	display: block;
+	padding: 3px 5px;
+	font-size: 1em;
+	font-family: Regular;
 }
 legend{
 	font-family: Regular;
