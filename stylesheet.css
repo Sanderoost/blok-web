@@ -1,0 +1,159 @@
+/* Ik gebruik variablen omdat ik nog niet helemaal eens ben met de kleur verdeling van de elementen, vind het een beetje onhandig om telkens maar te moeten zoeken*/
+:root {
+  --rood: #ED1A2D;
+  --lichtblauw: #13679c;
+  --donkerblauw: #00477F;
+  --zwart: #221F20;
+  --grijs: #EBEBEC;
+}
+html{
+	font-size: 1em;
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(fonts/SourceSansPro-Regular.otf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(fonts/SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family: Light;
+    src: url(fonts/SourceSansPro-Light.otf);
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #fdfdfd;
+}
+header{
+	background-color: white;
+	min-height: 15%;
+}
+nav{
+	position: relative;
+	
+}
+nav img{
+	height: 35px; 
+	margin-left: 35%;
+}
+nav button{
+	background-color: red;
+	color: white;
+	border: none;
+	right: 0px;
+	position: absolute;
+	border-radius: 50%;
+	font-size: 1.2em;
+	padding: 5px 10px;
+}
+
+
+/* pagina */
+
+fieldset{
+	width: 100%;
+	border:none;
+	background-color: var(--grijs);
+	padding: 0px;
+}
+fieldset button{
+	margin:auto;
+	display: block;
+	padding: 3px 5px;
+	font-size: 1em;
+	font-family: Regular;
+}
+legend{
+	font-family: Regular;
+	color: var(--donkerblauw);
+	margin: 20px auto 0px;
+	font-size: 1.2em;
+}
+section{
+	background-color: #F9F9F9;
+}
+
+section > img{
+	width: 100%
+}
+
+article{
+	border-radius: 15px;
+	background-color: white;
+	margin: 30px auto;
+	width: 90%;
+	-webkit-box-shadow: 0px 3px 11px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 11px -3px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 11px -3px rgba(0,0,0,0.75);
+	position: relative;
+}
+
+article img{
+	width: 100%;
+	max-height: 300px;
+	border-radius: 15px 15px 0px 0px;
+}
+
+article h2{
+	bottom: 20px;
+	left: 10px;
+	margin-left: 2%;
+	color: var(--donkerblauw);
+	font-family: Regular;
+}
+article h2::after{
+	display: block;
+	content: "____________";
+	margin-left: -4px;
+	margin-top: -20px;
+	position: absolute;
+	color: red;
+}
+article p{
+	font-size: .9em;
+	font-family: Light;
+	color: var(--lichtblauw);
+	padding: 10px 5px;
+}
+article span{
+	font-family: Light;
+}
+article button{
+	border-radius: 5%;
+	color: var(--donkerblauw)
+}
+small{
+	margin-left: 10%;
+	font-family: Regular;
+	color: var(--donkerblauw);
+	font-size: 1em;
+}
+article > button{
+	font-size: 1em;
+	font-family: Regular;
+	position: absolute;
+	bottom: 2%;
+	right: 5%;
+	background-color: var(--grijs);
+	color: var(--donkerblauw);
+	border:none;
+	border-radius: 10px;
+	padding: 2px 8px;
+}
+.leestijd{
+	top: 1%;
+	right: 2%;
+	position: absolute;
+	font-size: 1.1em;
+	font-family: Bold;
+}
+.zwart{
+	color: var(--donkerblauw);
+}
+.wit{
+	color: #FFFFFF;
+}
