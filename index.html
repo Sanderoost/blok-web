@@ -9,21 +9,71 @@
 <body>
 <header>
 	<nav>
-	<img src="images/Ret.JPG">
+		<a href="index.html"><img src="images/Ret.JPG" alt="RetLogo"></a>
 	<button><i class="fas fa-search"></i></button>
 	</nav>
 </header>
 <section>
-	<img src="images/banner.jpg">
-	<fieldset>
-		<legend>Waar heb je zin in?</legend>
-		<button>Filter </button>
-	</fieldset>
+	<picture>
+		<h1>99 verhalen voor onderweg</h1>
+		<source media="(min-width: 900px)" srcset="images/banner-groot.jpg">
+		<source media="(min-width: 600px)" srcset="images/banner-middel.jpg">
+		<img src="images/banner-klein.jpg" alt="Retverhalenbanner">
+	</picture>
+		<div>
+			<!-- Het filter blijft voor nu nog even zo maar zodra ik javascript erin gooi dan kan deze ingeklapt en uitgeklapt worden -->
+			<span>Waar heb je zin in?</span>
+			<button>Filter<i class="fas fa-caret-down"></i></button>
+			<form action="" method="">
+				<fieldset>
+					<legend>Filter: <i class="fas fa-caret-up"></i></legend>
+					  <select name="genre">
+					    <option value="alle">Alle verhalen</option>
+					    <option value="horror">Horror (7)</option>
+					    <option value="liefde">Liefde (1)</option>
+					    <option value="mysterie">Mysterie (2)</option>
+				     	<option value="actie">Actie (3)</option>
+  				     	<option value="verdriet">Verdriet (1)</option>
+				     	<option value="humor">Humor (1)</option>
+				     	<option value="rust">Rust (1)</option>
+				     	<option value="nsfw">Nsfw (2)</option>
+					  </select>
+					  <select name="leestijd">
+					    <option value="alle">Alle leestijden</option>
+					    <option value="1-5">1-5 minuten</option>
+					    <option value="5-10">5-10 minuten</option>
+					    <option value="10-15">10-15 minuten</option>
+					    <option value="15-20">15-20 minuten</option>
+					  </select>
+					<legend>Sorteren op:</legend>
+					<ul>
+						<li>
+							<input type="radio" id="alfabetisch" name="selector">
+							<label for="alfabetisch">alfabetisch</label>
+						</li>
+						<li>
+							<input type="radio" id="likes" name="selector">
+							<label for="likes">meeste likes</label>
+						</li>
+						<li>
+							<input type="radio" id="gelezen" name="selector">
+							<label for="gelezen">meest gelezen</label>
+						</li>
+						<li>
+							<input type="radio" id="nieuwst" name="selector">
+							<label for="nieuwst">nieuwst</label>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</div>
 	<article>
-		<img src="images/Verliefd.jpg">
+		<img src="images/Verliefd.jpg" alt="Verliefdimage">
 		<span class="leestijd zwart">12 Minuten</span>
-		<h2>Verliefd</h2>
-		<button></button>
+		<header>
+			<h2>Verliefd</h2>
+			<button><i class="fas fa-download"></i></button>
+		</header>
 		<p>
 			Licht van mijn leven. Ik stapte vandaag bus 21 uit. 
 			Het was op het midden van de dag.
@@ -31,15 +81,19 @@
 			Het was twaalf uur, onze fantastische zoon sliep net.
 			De miezelregen aaide de haartjes op mijn hand en... 
 		</p>
-		<small><i class="fas fa-thumbs-up"></i> 110x</small>
-		<small><i class="fab fa-readme"></i> 60x</small>
-		<button>lees verhaal ></button>
+		<footer>
+			<small><i class="fas fa-thumbs-up"></i> 110x</small>
+			<small><i class="fab fa-readme"></i> 60x</small>
+			<button>lees verhaal <i class="fas fa-caret-right"></i></button>
+		</footer>
 	</article>
 	<article>
-		<img src="images/droom.jpeg">
+		<img src="images/droom.jpeg" alt="Droomimage">
 		<span class="leestijd wit">12 Minuten</span>
-		<h2>Droom</h2>
-		<button></button>
+		<header>
+			<h2>Droom</h2>
+			<button><i class="fas fa-download"></i></button>
+		</header>
 		<p>
 			Slierten mist zwerven rond mijn benen. 
 			Net zat ik nog in Bus 21. Het was warm, zweet parelde 
@@ -47,9 +101,11 @@
 			Nu loop ik over een smal pad langs eindeloos diepe 
 			bouwputten... 
 		</p>
-		<small><i class="fas fa-thumbs-up"></i> 110x</small>
-		<small><i class="fab fa-readme"></i> 60x</small>
-		<button>lees verhaal ></button>
+		<footer>
+			<small><i class="fas fa-thumbs-up"></i> 110x</small>
+			<small><i class="fab fa-readme"></i> 60x</small>
+			<button>lees verhaal <i class="fas fa-caret-right"></i></button>
+		</footer>
 	</article>
 </section>
 </body>
