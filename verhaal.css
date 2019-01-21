@@ -51,15 +51,29 @@ h1{
 	font-size: 6em;
 	position: absolute;
 	left: 29%;
-	top: 35%;
+	top: 40%;
 	margin: 0em;
 	background: none;
 	opacity: 1;
 	color: #B12421;
-    text-shadow: 0 0 .75em #FFF;
+    text-shadow: 0 0 2em #FFF;
+}
+h1:first-of-type{
+	animation: titel 1s infinite alternate;
+}
+h1:first-of-type::before{
+	content: url("images/hart.png");
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	margin-top: -1.5em;
+	margin-left: 3.5em; 
 }
 h1:last-of-type{
+	font-family: Regular;
 	visibility: hidden;
+	color: white;
+	left: 32%;
 }
 p{
 	text-align: center;
@@ -70,9 +84,13 @@ p{
 	position: absolute;
 	left: 20%;
 	top:22%;
+    opacity: 1;
 	visibility: hidden;
 }
-p:last-child{
+p:nth-of-type(2){
+	top: 30%;
+}
+p:nth-of-type(3){
 	top: 30%;
 }
 span{
@@ -127,6 +145,14 @@ img{
     text-shadow: 0 0 .15em #FFF;
   }
 }
+@keyframes titel {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 .3em #fff;
+  }
+}
 @keyframes wolk1 {
     from { transform : translateX(0em) }
     to   { transform : translateX(100em) }
@@ -152,9 +178,10 @@ img{
     		font-size: 2.7em;
     		left: 5%;
 		}
-		h1:last-of-type{
-			font-size: 3.5em;
-			left: 22%
+		h1:first-of-type::before{
+			transform: scale(.5);
+			margin-top: -2em;
+			margin-left: 3.1em; 
 		}
 	    p{
 	    	width: 90%;
