@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Cloud;
+    src: url(fonts/DCC.otf);
+}
+@font-face {
+    font-family: King;
+    src: url(fonts/Kingthings.TTF);
+}
+.background{
+	display: block;
+	background-image: linear-gradient(#13B2F4, #8FE8FA);
+	width: 100%;
+	max-width: 100%;
+	margin:0em;
+	height: 100vh;
+	position: relative;
+}
+#back{
+	font-size: 2em;
+	text-decoration: none;
+	font-family: Bold;
+	color: white;
+	background-color: var(--rood);
+	position: absolute;
+	top:1em;
+	left: 1em;
+	border-radius: 50%;
+	padding: 0.1em 0.4em;
+	z-index: 2;
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+#next{
+	position: absolute;
+	top:85%;
+	left: 47%;
+	padding: 0.1em 0.2em;
+	color: white;
+	background:none;
+	border:none;
+	font-size: 4em;
+}
+#back:hover{
+	opacity: 1;
+}
+#next:hover{
+	transform: scale(1.1);
+}
+h1{
+	font-family: King;
+	font-size: 6em;
+	position: absolute;
+	left: 29%;
+	top: 35%;
+	margin: 0em;
+	background: none;
+	opacity: 1;
+	color: #B12421;
+    text-shadow: 0 0 .75em #FFF;
+}
+h1:last-of-type{
+	visibility: hidden;
+}
+p{
+	text-align: center;
+	width: 60%;
+	font-size: 2.2em;
+	font-family: Light;
+	color: white;
+	position: absolute;
+	left: 20%;
+	top:22%;
+	visibility: hidden;
+}
+p:last-child{
+	top: 30%;
+}
+span{
+	font-size: 1.3em;
+	font-family: Cloud;
+	animation: gloei 1s infinite alternate;
+	color: white !important;
+}
+span:after{
+    content:"\a";
+    white-space: pre;
+}
+span:nth-child(1):after{
+	content: "";
+}
+span:last-child{
+	display: block;
+}
+img{
+	position: fixed;
+}
+#wolk1{
+	animation: wolk1 300s infinite alternate;
+	top: 3%;
+	left: 10%;
+}
+#wolk2{
+	animation: wolk2 100s infinite alternate;
+	top: 30%;
+	left: 7%;
+}
+#wolk3{
+	animation: wolk3 400s infinite alternate;
+	top: 7%;
+	left: 80%;
+}
+#wolk4{
+	animation: wolk4 200s infinite alternate;
+	top: 60%;
+	left: 5%;
+}
+#wolk5{
+	animation: wolk5 250s infinite alternate;
+	top: 70%;
+	left: 15%;
+}
+@keyframes gloei {
+  from {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 .15em #FFF;
+  }
+}
+@keyframes wolk1 {
+    from { transform : translateX(0em) }
+    to   { transform : translateX(100em) }
+}@keyframes wolk2 {
+    from { transform : translateX(0em) }
+    to   { transform : translateX(-20em) }
+}@keyframes wolk3 {
+    from { transform : translateX(0em) }
+    to   { transform : translateX(-100em) }
+}@keyframes wolk4 {
+    from { transform : translateX(100em) }
+    to   { transform : translateX(0em) }
+}@keyframes wolk5 {
+    from { transform : translateX(0em) }
+    to   { transform : translateX(100em) }
+}
+    @media only screen and (max-width:32em){
+    	img{
+    		height: 5em;
+    	}
+    	h1{
+    		top: 40%;
+    		font-size: 2.7em;
+    		left: 5%;
+		}
+		h1:last-of-type{
+			font-size: 3.5em;
+			left: 22%
+		}
+	    p{
+	    	width: 90%;
+	    	left: 5%;
+	    	color: black;
+	    	font-size: 1.4em;
+	    	animation: gloei 9s infinite alternate !important;
+    	}
+    	#next{
+			font-size: 2em;
+			left: 49%;
+		}
+    }
+    @media only screen and (min-width: 33em) and (max-width:65em){
+	img{
+		height: 10em;
+    }
+    p{
+    	width: 90%;
+    	left: 5%;
+    	color: black;
+    	animation: gloei 9s infinite alternate !important;
+    }
+	h1{
+    		font-size: 5em;
+    		left: 10%;
+		}
+	h1:last-of-type{
+			font-size: 7.5em;
+			left: 22%
+		}
+}

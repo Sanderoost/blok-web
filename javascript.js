@@ -22,7 +22,10 @@ filter.addEventListener("click", function(){
 //Download knop groter maken en notificatie geven
 download.addEventListener("click", function(){
 	download.classList.toggle("downloaded");
-	notify.classList.toggle("notify");
+  setTimeout(function(){  
+    notify.classList.toggle("notify");
+  }, 2400);
+
 	});
 //Header hoogte uitreken
   const header_height = nav.offsetHeight
@@ -36,3 +39,5 @@ download.addEventListener("click", function(){
     	nav.classList.remove("scrolled");
      }
   })
+
+
